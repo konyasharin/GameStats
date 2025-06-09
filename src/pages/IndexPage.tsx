@@ -1,7 +1,11 @@
 import { FC } from 'react';
 
-import { Container } from '@/shared/ui';
+import { Container, Typography } from '@/shared/ui';
 
 export const IndexPage: FC = () => {
-  return <Container>123</Container>;
+  return (
+    <Container>
+      <Typography>123</Typography>
+    </Container>
+  );
 };
