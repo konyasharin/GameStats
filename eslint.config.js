@@ -36,21 +36,21 @@ export default tseslint.config(
           'default': 'allow',
           'rules': [
             {
-              'from': 'ui',
+              'from': 'shared',
               'disallow': [
                 'pages',
                 'modules',
-                'components'
+                'widgets'
               ],
-              'message': 'import in ui scope from pages, modules, components is forbidden'
+              'message': 'import in shared scope from pages, modules, widgets is forbidden'
             },
             {
-              'from': 'components',
+              'from': 'widgets',
               'disallow': [
                 'pages',
                 'modules',
               ],
-              'message': 'import in components scope from pages, modules is forbidden'
+              'message': 'import in widgets scope from pages, modules is forbidden'
             },
             {
               'from': 'modules',
@@ -101,7 +101,6 @@ export default tseslint.config(
         {
           selector: 'interface',
           format: ['PascalCase'],
-          prefix: ['I'],
         },
         {
           selector: 'typeAlias',

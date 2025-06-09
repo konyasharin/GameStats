@@ -1,7 +1,11 @@
 import { FC } from 'react';
 
+import '../styles/index.css';
+
+import { AppRoutes } from '@/app/routing';
+
 const App: FC = () => {
-  return <>123</>;
+  return <AppRoutes />;
 };
 
 export default App;
